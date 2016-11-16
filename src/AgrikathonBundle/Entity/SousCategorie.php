@@ -32,7 +32,7 @@ class SousCategorie
     /**
      * @var string
      *
-     * @ORM\Column(name="nomSousCategorie", type="string", length=255)
+     * @ORM\Column(name="categorie", type="string", length=255)
      *
      * @ORM\ManyToOne(targetEntity="Categorie", inversedBy="sousCategories")
      */
