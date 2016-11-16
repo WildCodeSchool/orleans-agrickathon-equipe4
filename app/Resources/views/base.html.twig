@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>{% block head %}
+
+    <meta charset="UTF-8" />
+    <title>{% block title %}
+            AgrikathonCFKG
+        {% endblock %}
+    </title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{{ asset ('css/header.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/stylenavbar.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/footer.css')}}">
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="{{ asset ('js/bootstrap.min.js')}}"></script>
+    {% endblock %}
+    {% endblock %}
+</head>
+
+
+
+
+
+
+<body>
+
+        {% block navbar %}
+             {% include '@Agrikathon/Default/navbar.html.twig' %}
+        {% endblock %}
+
+
+        {% block header %}
+            {% include '@Agrikathon/Default/header.html.twig' %}
+        {% endblock %}
+
+
+
+        {% block content %}
+
+        {% endblock %}
+
+
+        {% block footer %}
+            {% include '@Agrikathon/Default/footer.html.twig' %}
+        {% endblock %}
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
 </html>

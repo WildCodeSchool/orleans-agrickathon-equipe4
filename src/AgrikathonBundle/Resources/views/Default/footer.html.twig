@@ -1,135 +1,227 @@
-<section class="'footer_categories -hidden">
-    <div class="content-center">
-        <section class="grid-4">
-            <div>
-                <ul>
-                    <li class="titre" >
-                    <a href="#"
-                    </li>
+<div class="container-fluid foot-back fonddiv">
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">ALIMENTATION
+            </h4>
 
-
-
-                </ul>
-
-
-
-            </div>
-
-
-        </section>
-    </div>
-</section>
-
-
-
-
-
-
-
-<footer>
-    <div class="container-fluid">
-        <a href="{{ path('page_accueil_principale') }}"> <img class="logo-footer" src="{{ asset('images/logo2.png') }}" alt="Logo FFSS45"></a>
-
-
-        <div class="row">
-            <!--  Footer gauche -->
-            <div class="col-md-8">
-                <div class="col-md-6">
-                    <ul>
-                        <li><a href="{{ path('espace_formation',{'typeFormation':'particulier'}) }}">Particuliers</a> </li>
-                        <li><a href="{{ path('espace_formation',{'typeFormation':'professionnel'}) }}">Professionnels</a> </li>
-                        <li><a href="{{ path('formulaire') }}">Poste de Secours</a> </li>
-                        <li><a href="{{ path('page_actualites') }}">News</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li><a href="{{ path('page_accueil_principale') }}#identite">Qui sommes-nous</a> </li>
-                        <li><a href="{{ path('mentionsLegales') }}">Mentions légales</a> </li>
-                        <li><a href="http://eos.ffss.fr">Intranet</a> </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <ul>
-                    <li><a href="{{ path('page_accueil_principale') }}#formulaire_contact">Contact</a> </li>
-                    <li><a href="{{ path('page_rejoindre') }}">Rejoignez-nous</a></li>
-                    <li>Réalisé par <a href="http://www.wildcodeschool.fr"><img src="{{ asset('images/logo_small_orange_horizontal.png') }}" class="logo_WCS"></a></li>
-                </ul>
-            </div>
-
-        </div>
-        <!-- 2eme container-->
-
-
-        <div class="row2">
-            <div class="hidden-xs">
-
-                <div class='last_footer_responsive color_ml'> FFSS Fédération Française de Secourisme et de Sauvetage - Tous droits réservés. Orléans
-
-                </div>
-            </div>
-
-            <div class="visible-xs">
-
-                <p id="footer">FFSS45 à ORLEANS</p>
-
-            </div>
-
-
+            <ul>
+                <li class="foot_list">
+                    Courses
+                </li>
+                <li class="foot_list">
+                    Livraison Panier repas
+                </li>
+                <li class="foot_list">
+                    Cuisine à domicile
+            </ul>
         </div>
 
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">ENTRETIEN MAISON</h4>
 
+            <ul>
+                <li class="foot_list">
+                    Ménage
+                </li>
+                <li class="foot_list">
+                    Repassage
+                </li>
+                <li class="foot_list">
+                    Jardinage
+                </li>
+                <li class="foot_list">
+                    Bricolage
+                </li>
+                <li class="foot_list">
+                    Couture, retouches
+                </li>
+            </ul>
+        </div>
 
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">ASSISTANCE DEPANNAGE</h4>
 
-        <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
+            <ul>
+                <li class="foot_list">
+                    Entretien voiture
+                </li>
+                <li class="foot_list">
+                    Services informatiques
+                </li>
+                <li class="foot_list">
+                    Aide administrative
+                </li>
+            </ul>
+        </div>
 
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">MOBILITE</h4>
 
-
-        <script>
-
-            ScrollToTop=function() {
-                var s = $(window).scrollTop();
-                if (s > 250) {
-                    $('.scrollup').fadeIn();
-                } else {
-                    $('.scrollup').fadeOut();
-                }
-
-                $('.scrollup').click(function () {
-                    $("html, body").animate({ scrollTop: 0 }, 500);
-                    return false;
-                });
-            }
-
-            StopAnimation=function() {
-                $("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
-                    $('html, body').stop();
-                });
-            }
-
-
-            $(window).scroll(function() {
-                ScrollToTop();
-                StopAnimation();
-            });
-
-
-        </script>
-        <script>
-            $(window).scroll(function (event) {
-                // A chaque fois que l'utilisateur va scroller
-                var y = $(this).scrollTop(); // On récupérer la valeur du scroll vertical
-                var hauteur = document.getElementById('test').scrollHeight; // on récupère la "hauteur de la bannière
-                //si scroll > à bannière on ajoute la class
-                if (y >= hauteur) {
-                    $('.firstnav').addClass('fixed');
-                } else {
-                    // sinon, on l'enlève
-                    $('.firstnav').removeClass('fixed');
-                }
-            });
-
-        </script>
+            <ul>
+                <li class="foot_list">
+                    Prêt de véhicules
+                </li>
+                <li class="foot_list">
+                    Covoiturage
+                </li>
+                <li class="foot_list">
+                    Navette entreprise
+                </li>
+            </ul>
+        </div>
     </div>
-</footer>
+</div>
+
+
+
+
+
+
+
+
+<div class="container-fluid foot-back fonddiv">
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">LOISIRS CULTURE</h4>
+
+            <ul>
+                <li class="foot_list">
+                    Cours particuliers
+                </li>
+                <li class="foot_list">
+                    Sorties culturelles
+                </li>
+                <li class="foot_list">
+                    Club de partage
+            </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">ENFANTS</h4>
+
+            <ul>
+                <li class="foot_list">
+                    Garde d’enfants
+                </li>
+                <li class="foot_list">
+                    Baby-sitting
+                </li>
+                <li class="foot_list">
+                    Soutien scolaire
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">EN VOTRE ABSENCE</h4>
+
+            <ul>
+                <li class="foot_list">
+                    Nourrir, promener animaux
+                </li>
+                <li class="foot_list">
+                    Arrosage plantes
+                </li>
+                <li class="foot_list">
+                    Gardiennage
+                </li>
+                <li class="foot_list">
+                    Réception colis /livraison
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+            <h4 class="foot-menu">SANTE</h4>
+
+            <ul>
+                <li class="foot_list">
+                    Surveillance
+                </li>
+                <li class="foot_list">
+                    Mutualisation des RDV médicaux
+                </li>
+                <li class="foot_list">
+                    Livraison de médicaments
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid foot-back fonddiv2">
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <h3 class="foot-menu">A PROPOS DE SERVICES CAMPAGNES</h3>
+
+            <ul>
+                <li class="foot_list">
+                    <a class="liste_menu">Qui somme-nous ?</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+            <h3 class="foot-menu">INFORMATIONS LEGALES</h3>
+
+            <ul>
+                <li class="foot_list">
+                    Conditions générales d'utilisation
+                </li>
+                <li class="foot_list">
+                    Règles de diffusion
+                </li>
+                <li class="foot_list">
+                    Conditions Générales de Vente
+                </li>
+                <li class="foot_list">
+                    Vie privée / cookies
+                </li>
+                <li class="foot_list">
+                    Vos droits et obligations
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+            <h3 class="foot-menu">PROFESSIONNELS</h3>
+
+            <ul>
+                <li class="foot_list">
+                    Publicité
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+            <h3 class="foot-menu">DES QUESTIONS</h3>
+
+            <ul>
+                <li class="foot_list">
+                    Aide
+                </li>
+                <li class="foot_list">
+                    Nous contacter
+                </li>
+                <li class="foot_list">
+                    Conditions Générales de Vente
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
