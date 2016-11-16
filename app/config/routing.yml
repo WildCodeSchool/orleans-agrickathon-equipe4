@@ -1,3 +1,8 @@
+agrikathon:
+    resource: "@AgrikathonBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
