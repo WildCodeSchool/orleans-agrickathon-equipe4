@@ -12,9 +12,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="{{ asset ('CSS/header.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('CSS/stylenavbar.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('CSS/footer.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset ('css/header.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/stylenavbar.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/footer.css')}}">
     {% endblock %}
 
     {% block javascripts %}
@@ -30,25 +30,24 @@
 
 <body>
 
+        {% block navbar %}
+             {% include '@Agrikathon/Default/navbar.html.twig' %}
+        {% endblock %}
 
 
         {% block header %}
-
-            <div class="navbar navbar navbar-fixed" >
-            CECI EST LA navbar
-            </div>
-
+            {% include '@Agrikathon/Default/header.html.twig' %}
         {% endblock %}
 
 
 
         {% block content %}
-            CECI EST LA PLACE POUR LE CONTENU
+
         {% endblock %}
 
 
         {% block footer %}
-            CECI EST LE footer
+            {% include '@Agrikathon/Default/footer.html.twig' %}
         {% endblock %}
 
 
