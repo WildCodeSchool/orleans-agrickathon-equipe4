@@ -1,8 +1,15 @@
+
 {% extends 'base.html.twig' %}
+
+
+
+
+
 
 {% block content %}
 
         <div class="container-fluid logos">
+                <center>
 
         <img src="{{ asset('images/picto150px.png')}}" class="logo"/>
         <img src="{{ asset('images/picto150px.png')}}" class="logo"/>
@@ -12,42 +19,28 @@
         <img src="{{ asset('images/picto150px.png')}}" class="logo"/>
         <img src="{{ asset('images/picto150px.png')}}" class="logo"/>
         <img src="{{ asset('images/picto150px.png')}}" class="logo"/>
+
+                </center>
         </div>
 
+        <div class="row">
+                <div class="col-sm-6 ">
+                        <h1 class="propose">JE PROPOSE</h1>
+                </div>
 
-        <div class="container-fluid foot-back fondindex">
+                <div class="col-sm-6">
+                         <h1 class="propose1">JE DEMANDE</h1>
+                </div>
+        </div>
 
-                <div class="row">
-                        <div class="col-xs-6 col-md-3">
+        <div class="row">
 
-
-
-
-
-                                <h4 class="foot-menu">ALIMENTATION
-                                </h4>
-
-                                <ul>
-                                        <li class="foot_list">
-                                                Courses
-                                        </li>
-                                        <li class="foot_list">
-                                                Livraison Panier repas
-                                        </li>
-                                        <li class="foot_list">
-                                                Cuisine à domicile
-                                </ul>
-                        </div>
+                <div class="col-sm-12">
+                        <h1 class="propose2">JE PRENDS RDV en agence partenaire</h1>
                 </div>
         </div>
 
 
-        <h1 class="slogan">Agriculture Services</h1>
-
-
-        <script>
-
-        </script>
 
 
 {% endblock %}

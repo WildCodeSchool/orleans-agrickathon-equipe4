@@ -1,4 +1,14 @@
 .jumbo1 {
-    height: 300px;
-    width: auto;
+    height: 250px;
+    width: 2000px;
+}
+
+.rs {
+    font-weight: bold;
+    font-size: 4.5rem;
+    background-color: lawngreen;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
